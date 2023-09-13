@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"arm_robot\startup_stm32f407xx.o"
+"arm_robot\main.o"
+"arm_robot\stm32f4xx_it.o"
+"arm_robot\stm32f4xx_hal_msp.o"
+"arm_robot\stm32f4xx_hal_tim.o"
+"arm_robot\stm32f4xx_hal_tim_ex.o"
+"arm_robot\stm32f4xx_hal_rcc.o"
+"arm_robot\stm32f4xx_hal_rcc_ex.o"
+"arm_robot\stm32f4xx_hal_flash.o"
+"arm_robot\stm32f4xx_hal_flash_ex.o"
+"arm_robot\stm32f4xx_hal_flash_ramfunc.o"
+"arm_robot\stm32f4xx_hal_gpio.o"
+"arm_robot\stm32f4xx_hal_dma_ex.o"
+"arm_robot\stm32f4xx_hal_dma.o"
+"arm_robot\stm32f4xx_hal_pwr.o"
+"arm_robot\stm32f4xx_hal_pwr_ex.o"
+"arm_robot\stm32f4xx_hal_cortex.o"
+"arm_robot\stm32f4xx_hal.o"
+"arm_robot\stm32f4xx_hal_exti.o"
+"arm_robot\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "ARM_ROBOT\ARM_ROBOT.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ARM_ROBOT.map" -o ARM_ROBOT\ARM_ROBOT.axf
